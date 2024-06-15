@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #081b29;
+    color: #ededed;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+ .navbar a.active{
+    color: #00abf0;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height:  1.2;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.home-content p {
+    font-size:  16px;
+    margin: 20px 0 40px;
+}
+
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border:  2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: #00abf0;
+}
+
+.btn-box a::before {
+    content:  '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: red;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before{
+      width: 100%;
+}
+
+
+
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ededed;
+   
+}
+
+.main-box{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    column-gap: 100px;
+    border-left: 5px solid crimson;
+    border-right: 5px solid crimson;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px grey;
+    padding: 5px 15px;
+}
+.img-box{
+    width: 320px;
+    height: 500px;
+    background-color: rgb(0,202,202);
+    position: relative;
+    margin-top: 45px;
+}
+.img-box img{
+    width: 168px;
+    border-radius: 50%;
+    position: absolute;
+    height: 176px;
+    left: 70px;
+    top: -61px;
+}
+i{
+    font-size: 30px;
+    padding: 4px;
+}
+i:hover{
+   transition: 350ms ease-in-out;
+   transform: rotate(347deg);
+   box-shadow: 0 0 8px green;
+   font-size: 41px;
+   color: crimson;
+   cursor: pointer;
+   /* padding: 6px;  */
+}
+.txt-box{
+    width: 600px;
+}
+
+#btn{
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border-left: 2px solid crimson;
+    border-right: 2px solid crimson;
+    border-radius: 20px;
+}
+#btn:hover{
+    cursor: pointer;
+    border-left: 2px solid aqua;
+    border-right: 2px solid aqua;
+    transition: 200ms ease-in-out;
+    box-shadow: 5px 5px 5px grey;
+    transform: scale(1.1);
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+:root{
+    --primery-color: #fd562a;
+    --secondary-color: rgba(255,255,255,.4);
+}
+#service-section{
+    min-height: 585px;
+    width: 100%;
+    background: #20223a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#service-section h2{
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: -10px;
+    position: relative;
+}
+#service-section h2::after{
+       position: absolute;
+       content: " ";
+       top: 30%;
+       left: -30px;
+       height: 0;
+       width: 0;
+       border-top: 20px solid transparent;
+       border-left: 20px solid var(--primery-color);
+}
+#service-section h2::before{
+    position: absolute;
+    content: " ";
+    top: 30%;
+    right: -30px;
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-right: 20px solid var(--primery-color);
+}
+#service-section #paragraph{
+    width: 40%;
+    font-size: 1rem;
+    color: rgba(255,255,255,0.7);
+    text-align: center;
+    line-height: 1.5rem;
+    white-space: 1px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+    z-index: 9;
+    margin-top: 20px;
+}
+.cards .card{
+    min-height: 260px;
+    width: 370px;
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: column;
+    padding: 0 8%;
+    background: rgb(65, 62, 105);
+    position: relative;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+.cards .card::before{
+    position: absolute;
+    content: " ";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background: #fd562a;
+    /* transform: rotate(10deg); */
+    transform: rotate(0deg);
+    z-index: -1;
+}
+.cards .card:hover.card::before{
+    transform: rotate(10deg);
+}
+.cards .card i{
+    font-size: 2.5rem;
+    color: var(--primery-color);
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.cards .card h3{
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.cards .card .content p{
+    color: rgba(255,255,255,0.5);
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+@media(max-width:1100px){
+    #service-section h2{
+        margin-top: 30px;
+    }
+    .cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #service-section #peragraph{
+        width: 80%;
+    }
+}
+@media(max-width:900px){
+    .cards .card{
+        height: 300px;
+        width: 400px;
+        margin: 20px 0;
+    }
+}
+
